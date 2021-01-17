@@ -24,8 +24,8 @@ export class IncomeExpensesService {
       .pipe(
         map((snapshot) =>
           snapshot.map((doc) => ({
-            uid: doc.payload.doc.id,
             ...(doc.payload.doc.data() as any),
+            uid: doc.payload.doc.id,
           }))
         )
       );

@@ -8,9 +8,11 @@
           </div>
 
           <div class="text-wrapper">
-            <p class="profile-name">Cristobal Colón</p>
+            <p class="profile-name">{{ currentUser.name }}</p>
             <div>
-              <small class="designation text-muted">Gerente</small>
+              <small class="designation text-muted">{{
+                currentUser.email
+              }}</small>
             </div>
           </div>
         </div>
